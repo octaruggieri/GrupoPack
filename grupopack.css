@@ -440,11 +440,12 @@ header {
     padding: 10px;
     color: #fff;
     background: #000000;
-    border-radius: 90%;
+    border-radius: 30%;
 }
 
 .social a .bi:hover {
     background: var(--main-color);
+    
 }
 
 .links{
@@ -494,36 +495,87 @@ header {
     }
 }
 
-@media (max-width: 768px ){
-    header{
-        padding: 11px 4%;
+
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+      overflow-x: hidden;
     }
-    
-    #menu-icon{
-        display: initial;
+    header {
+      height: 60px;
+      font-size: 1.5rem;
+    }
+    .container {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    .column-1,
+    .column-2 {
+      width: 100%;
+    }
+    .column-1 {
+      margin-bottom: 20px;
+    }
+    .column-2 {
+      margin-bottom: 40px;
+    }
+    .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
     }
 
-    header .navbar{
-        position: absolute;
-        top: -500px;
+    .menu {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #FFF;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .menu.active {
         left: 0;
-        right: 0;
+      }
+      
+      .menu__list {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
-        background: #fff;
-        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
-        border-top: 2px solid var(--main-color);
-        transition: 0.2s;
-        text-align: left;
-    }
-    
-    .navbar .active{
-        top: 100%;
-    }
-
-    .navbar a{
-        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .menu__item {
+        margin-bottom: 30px;
+      }
+      
+      .menu__link {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
         display: block;
-        color: var(--second-color);
-    }
-}
+      }
+      
+      .menu__link:hover {
+        color: #E64C65;
+      }
+      
+      .menu__button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 36px;
+        color: #333;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    
+  }
