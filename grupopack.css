@@ -436,14 +436,14 @@ header {
     margin: 0.5rem;
 }
 
-.social a .bx {
-    padding: 5px;
+.social a .bi {
+    padding: 10px;
     color: #fff;
     background: #000000;
-    border-radius: 50%;
+    border-radius: 90%;
 }
 
-.social a .bx:hover {
+.social a .bi:hover {
     background: var(--main-color);
 }
 
