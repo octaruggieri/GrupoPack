@@ -85,14 +85,19 @@ header {
         font-size: 1.30rem;
         background-color: transparent;
         cursor: pointer;
+        position: absolute;
+        top: 1rem;
+
     }
 
     .abrir-menu {
         color: #000000;
+        left: 1rem;
     }
 
     .cerrar-menu {
         color: #ffffff;
+        right: 1rem;
     }
 
     .nav {
@@ -328,6 +333,14 @@ header {
 .nosotros-img {
     flex: 1 1 21rem;
 }
+
+@media screen and (max-width: 768px) {
+    .nosotros-img {
+      flex: 1 1 auto;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
 
 .nosotros-text {
     flex: 1 1 21rem;
