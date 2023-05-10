@@ -334,13 +334,7 @@ header {
     flex: 1 1 21rem;
 }
 
-@media screen and (max-width: 768px) {
-    .nosotros-img {
-      flex: 1 1 auto;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-  }
+
 
 .nosotros-text {
     flex: 1 1 21rem;
@@ -590,5 +584,9 @@ header {
         border: none;
         cursor: pointer;
       }
-    
+      
+      video {
+        max-width: 100%;
+        height: auto;
+      }
   }
