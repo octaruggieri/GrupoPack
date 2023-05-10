@@ -389,9 +389,7 @@ header {
 .packaging-text h2 {
     font-size: 1.3rem;
     color: var(--second-color);
-    box-shadow: 0 0 15px rgba(121, 121, 121, 0.5);
-    border-radius:20px;
-    display: inline-block;
+    
 }
 
 .packaging-text p {
@@ -427,6 +425,7 @@ header {
 .ubicación-text {
     flex: 1 1 17rem;
     color: #000000;
+    text-align: center;
 }
 
 .ubicación-text a {
@@ -440,8 +439,8 @@ header {
 }
 
 .ubicación-text p {
-    margin: 0.5rem 0 1rem;
-    text-align: justify;
+    margin: 0.5rem 0 1.5rem;
+    text-align: left;
 }
 
 .contacto {
