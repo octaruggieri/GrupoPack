@@ -92,7 +92,7 @@ header {
 
     .abrir-menu {
         color: #000000;
-        left: 1rem;
+        left: 0.20rem;
     }
 
     .cerrar-menu {
@@ -124,7 +124,7 @@ header {
 
     .nav-list {
         flex-direction: column;
-        align-items: end;
+        align-items: center;
     }
 
     .nav-list li a {
@@ -135,6 +135,7 @@ header {
     .nav-list li a.active {
         color: rgb(253, 160, 37);
         font-weight: bold;
+        font-size: 13px;
     }
 
 }
